@@ -3,9 +3,7 @@ public class Main {
         Gryffindor[] gryffindors = new Gryffindor[3];
         gryffindors[0] = Gryffindor.getStudentGryffindor("Harry Potter", 10, 11, 12, 13, 14);
         gryffindors[1] = Gryffindor.getStudentGryffindor("Hermione Granger", 11, 12, 13, 14, 15);
-        gryffindors[2] = Gryffindor.getStudentGryffindor("Ron Weasley", 12, 13, 14, 15, 16);System.out.println();
-        //Gryffindor.getSummaPowerStudent(gryffindors[0],Gryffindor.getSummaPowerStudent());
-        //System.out.println( Gryffindor.getSummaPowerStudent(gryffindors));
+        gryffindors[2] = Gryffindor.getStudentGryffindor("Ron Weasley", 12, 13, 14, 15, 16);
         Slytherin[] slytherins = new Slytherin[3];
         slytherins[0] = Slytherin.getStudentSlytherin("Draco Malfoy", 13, 14, 15, 16, 17);
         slytherins[1] = Slytherin.getStudentSlytherin("Graham Montagu", 14, 15, 16, 17, 18);
@@ -26,5 +24,10 @@ public class Main {
         System.out.println();
         System.out.println(ravenclaws[2]);
         System.out.println();
+        Gryffindor.getSummaPowerStudent(gryffindors[0], gryffindors[1]);
+        System.out.println();
+        Slytherin.getSummaPowerStudent(slytherins[1], slytherins[2]);
+        System.out.println();
+        Hogwarts.getSummaPowerStudent(slytherins[1], gryffindors[2]);
     }
 }
